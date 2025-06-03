@@ -62,7 +62,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
   }
 
   if (!acceptTerms) {
-    alert("You must accept the terms and conditions.");
+    alert("Please accept the terms and conditions.");
     return;
   }
 
@@ -79,7 +79,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
   localStorage.setItem("userEntries", JSON.stringify(entries));
 
   displayEntries();
-  this.reset(); // clear form
+  this.reset();
 });
 
 window.addEventListener("load", displayEntries);
